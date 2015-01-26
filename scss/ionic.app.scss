@@ -1,0 +1,159 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+//Colors Used
+$white: #fff;
+$activ8Red: rgb(150, 29, 43);
+$activ8RedTrans: rgba(150, 29, 43, 0.8);
+$dark: rgba(44,44,44,0.8);
+
+
+//Adjustments
+$center: 0 auto;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+.view, body {
+    background-color: transparent;
+}
+.pane {
+    background-color: rgba(0,0,0,0);
+    z-index: -9;
+}
+
+.bar.bar-header, .bar.bar-dark {
+    
+    background-color: rgba(44,44,44,0.8);
+    
+   .title  {
+    font-family: 'Stardos Stencil', cursive;
+    font-size: 26pt;
+    color: $white;
+    } 
+}
+
+.main-body  {
+    background-image: url(../img/activ8bg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+#home-btn {
+    font-size: 20pt;
+    text-align: center;
+    line-height: 2ex;
+    padding-left: 2%;
+    z-index: 12;
+    color: $white;
+}
+
+#out-btn {
+    position: absolute;
+    right: 2%;
+    font-size: 20pt;
+    text-align: center;
+    line-height: 2ex;
+    z-index: 12;
+    color: $white;
+}
+
+.kettlebox {
+    width: 70%;
+    margin: $center;
+    margin-top: 30%;
+    text-align: center;
+}
+
+.kettle {
+    margin: $center;
+    width: 100%;
+}
+
+.login-fb {
+    color: $white;
+}
+
+.profile {
+    margin-top: 1%;
+    height: 150px;
+}
+
+.user {
+    margin-bottom: 2%;
+}
+
+.row.stats {
+    color: $white;
+    width: 80%;
+    margin: $center;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    margin: $center;
+}
+
+.username {
+    width: 50%;
+    color: $white;
+    margin: $center;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+}
+
+//New-work.html
+button#delete-move {
+    font-size: 15pt;
+    display: inline;
+    min-height: 4ex;
+}
+
+.todays-workout {
+    color: $white;
+    text-align: center;
+}
+
+.add-save {
+    text-align: center;
+}
+
+//History.html 
+.user-history {
+     background-color: rgba(0,0,0,0.3);
+    
+    .history-list { 
+        
+        h4, h5, .move-listings{
+            color: $white;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+

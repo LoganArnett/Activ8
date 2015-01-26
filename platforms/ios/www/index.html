@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html ng-app="activ8">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <style>
+      .angular-google-map-container {
+          width: 100%;
+          height: 504px;
+      }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Stardos+Stencil' rel='stylesheet' type='text/css'>
+    <link href="/css/preview-frame.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+<!--
+
+    <script>
+// Ionic Starter App
+
+// angular.module is a global place for creating, registering and retrieving Angular modules
+// 'starter' is the name of this angular module example (also set in a <body class="platform-ios platform-cordova platform-webview"> attribute in index.html)
+// the 2nd parameter is an array of 'requires'
+// 'starter.services' is found in services.js
+// 'starter.controllers' is found in controllers.js
+angular.module('app', ['ionic'])
+
+.run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if(window.cordova && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+    }
+    if(window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
+})
+
+.config(function($stateProvider, $urlRouterProvider) {
+
+  // Ionic uses AngularUI Router which uses the concept of states
+  // Learn more here: https://github.com/angular-ui/ui-router
+  // Set up the various states which the app can be in.
+  // Each state's controller can be found in controllers.js
+  $stateProvider
+    
+    .state('login', {
+      url: '/login',
+      templateUrl: 'states/login.html'
+    })
+    
+    .state('main', {
+      url: '/main',
+      templateUrl: 'main.html'
+    })
+    
+    .state('new-work', {
+      url: '/new-work',
+      templateUrl: 'new-work.html'
+    })
+    
+    .state('history', {
+      url: '/history',
+      templateUrl: 'history.html'
+    })
+    
+    .state('pr', {
+      url: '/pr',
+      templateUrl: 'pr.html'
+    })
+    
+    .state('tabs', {
+      templateUrl: 'states.tabs.html'
+    })
+  
+    ;
+
+  // if none of the above states are matched, use this as the fallback
+  
+  $urlRouterProvider.otherwise('/main');
+  
+
+});
+
+
+    </script>
+    -->
+  </head>
+  <body ng-controller="MainCtrl as app" animation="slide-left-right-ios7">
+  <div class="container">
+        <ion-header-bar class="bar bar-dark" ng-hide="app.outDoor()">
+            <h1 class="title">Activ8</h1>
+        </ion-header-bar>
+        <ion-nav-view class="main-body"></ion-nav-view>
+        <ion-nav-bar ng-show="app.outDoor()">
+            <div class="buttons light-buttons">
+                <a id="home-btn" class="button button-clear ion ion-home" href="#/main" ng-show="app.goHome()"></a>
+                <button id="out-btn" class="button button-clear ion ion-log-out " ng-click="app.logout()" ng-show="app.outDoor()"></button>
+            </div>
+            <ion-tabs class="tabs-dark tabs-icon-top tabs-striped">
+                <ion-tab title="Home" icon="ion-home" nav-direction="swap" href="/main">
+                    <ion-content padding="true" class="has-header"></ion-content>
+                </ion-tab>
+                <ion-tab title="Add" icon="ion-plus" nav-direction="swap" href="/new-work">
+                    <ion-content padding="true" class="has-header"></ion-content>
+                </ion-tab>
+                <ion-tab title="History" icon="ion-ios7-calendar-outline" nav-direction="swap" href="/history">
+                    <ion-content padding="true" class="has-header"></ion-content>
+                </ion-tab>
+                <ion-tab title="PR's" icon="ion-ios7-star" nav-direction="swap" href="/pr">
+                    <ion-content padding="true" class="has-header"></ion-content>
+                </ion-tab>
+            </ion-tabs>
+        </ion-nav-bar>
+  </div> 
+  <!-- Dependencies -->
+  <script src="lib/jQuery/dist/jquery.js"></script>
+  <script src="lib/firebase/firebase.js"></script>
+  <script src="lib/angularfire/dist/angularfire.js"></script>
+  <script src="js/app.js"></script>
+  
+  <!-- Angular App Controllers -->
+  <script src="js/controllers/main-controller.js"></script>
+  <script src="js/controllers/new-work-controller.js"></script>
+<!--
+<script id="login.html" type="text/ng-template">
+<ion-view title="Login">
+    <ion-content padding="true" scroll="false">
+        <div>
+            <img class="kettle" src="img/fbkettle.png">
+        </div>
+    </ion-content>
+</ion-view></script>
+<script id="main.html" type="text/ng-template">
+<ion-view title="Main">
+  <ion-content padding="true" class="has-header">
+        <div class="row profile">
+            <img class="profile-pic" src="img/snatchionic.jpg">
+        </div>
+        <div class="row user">
+            <h2 class="username">Logan Charles</h2>
+        </div> 
+        <div class="row stats">
+            <p class="col">
+                Stats go here<br>
+                Stats go here<br>
+                Stats go here</p>
+            <p class="col">
+                Stats go here<br>
+                Stats go here<br>
+                Stats go here</p>
+        </div>
+        <div class="row sharing">
+            <button class="button button-positive">Inspiration</button>
+        </div>
+        
+    </ion-content>
+    <ion-tabs class="tabs-dark ">
+        <ion-tab title="Activ8" icon="ion-plus">
+        
+        </ion-tab>
+        <ion-tab title="Tab" icon="ion-ios7-calendar-outline">
+            <ion-content padding="true" class="has-header"></ion-content>
+        </ion-tab>
+        <ion-tab title="Tab" icon="ion-ios7-star">
+            <ion-content padding="true" class="has-header"></ion-content>
+        </ion-tab>
+    </ion-tabs>
+</ion-view></script>
+<script id="new-work.html" type="text/ng-template">
+<ion-view title="New Workout">
+    <ion-tabs class="tabs-dark ">
+        <ion-tab title="add" icon="ion-plus">
+            <ion-content padding="true" class="has-header">
+                <form>
+                    <ion-list></ion-list>
+                </form>
+            </ion-content>
+        </ion-tab>
+        <ion-tab title="history" icon="ion-ios7-calendar-outline">
+            <ion-content padding="true" class="has-header"></ion-content>
+        </ion-tab>
+        <ion-tab title="Tab" icon="ion-ios7-star">
+            <ion-content padding="true" class="has-header"></ion-content>
+        </ion-tab>
+    </ion-tabs>
+</ion-view></script>
+<script id="history.html" type="text/ng-template">
+<ion-view title="History">
+    <ion-tabs class="tabs-dark ">
+        <ion-tab title="add" icon="ion-plus">
+            <ion-content padding="true" class="has-header">
+                <form>
+                    <ion-list></ion-list>
+                </form>
+            </ion-content>
+        </ion-tab>
+        <ion-tab title="history" icon="ion-ios7-calendar-outline">
+            <ion-content padding="true" class="has-header"></ion-content>
+        </ion-tab>
+        <ion-tab title="pr" icon="ion-ios7-star">
+            <ion-content padding="true" class="has-header"></ion-content>
+        </ion-tab>
+    </ion-tabs>
+</ion-view></script>
+<script id="pr.html" type="text/ng-template">
+<ion-view title="Personal Records">
+    <ion-tabs class="tabs-dark ">
+        <ion-tab title="add" icon="ion-plus">
+            <ion-content padding="true" class="has-header">
+                <form>
+                    <ion-list></ion-list>
+                </form>
+            </ion-content>
+        </ion-tab>
+        <ion-tab title="history" icon="ion-ios7-calendar-outline">
+            <ion-content padding="true" class="has-header"></ion-content>
+        </ion-tab>
+        <ion-tab title="pr" icon="ion-ios7-star">
+            <ion-content padding="true" class="has-header"></ion-content>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>
+</script>
+-->
+
+  </body>
+</html>
