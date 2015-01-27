@@ -55,3 +55,11 @@
 2015-01-26 13:51:28.162 creatorTest[13214:661705] [CDVTimer][TotalPluginStartup] 1.212001ms
 2015-01-26 13:51:28.671 creatorTest[13214:661705] Resetting plugins due to page load.
 2015-01-26 13:51:29.708 creatorTest[13214:661705] Finished load of: file:///Users/Macsimus/Library/Developer/CoreSimulator/Devices/12A2A524-841F-4610-88D3-CD62B7FDC91E/data/Containers/Bundle/Application/D5213640-BEB4-4442-8E5F-C50FC1653609/creatorTest.app/www/index.html#/login
+2015-01-27 15:48:51.502 creatorTest[19391:854793] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Macsimus/Library/Developer/CoreSimulator/Devices/12A2A524-841F-4610-88D3-CD62B7FDC91E/data/Containers/Data/Application/F2371263-2504-409E-9C56-B74D52EAF67C/Library/Cookies/Cookies.binarycookies
+2015-01-27 15:48:51.974 creatorTest[19391:854793] Apache Cordova native platform version 3.7.0 is starting.
+2015-01-27 15:48:51.975 creatorTest[19391:854793] Multi-tasking -> Device: YES, App: YES
+2015-01-27 15:48:52.010 creatorTest[19391:854793] Unlimited access to network resources
+2015-01-27 15:48:52.707 creatorTest[19391:854793] [CDVTimer][keyboard] 0.088990ms
+2015-01-27 15:48:52.707 creatorTest[19391:854793] [CDVTimer][TotalPluginStartup] 0.338972ms
+2015-01-27 15:48:53.200 creatorTest[19391:854793] Resetting plugins due to page load.
+2015-01-27 15:48:54.164 creatorTest[19391:854793] Finished load of: file:///Users/Macsimus/Library/Developer/CoreSimulator/Devices/12A2A524-841F-4610-88D3-CD62B7FDC91E/data/Containers/Bundle/Application/4193E6CD-9CE7-4415-A788-574C4B1FE41A/creatorTest.app/www/index.html#/login

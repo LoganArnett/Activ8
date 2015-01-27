@@ -158,13 +158,7 @@ angular.module('activ8')
   };
 
   //Posting Workouts to the Workout Array
-  this.workout = [{
-      name: "",
-      reps: "",
-      rds: "",
-      weight: "",
-      moveNumber: 1
-    } ];
+  this.workout = [ ];
 
   this.addMove = function(){
     this.workout.push({
@@ -180,6 +174,7 @@ angular.module('activ8')
   this.delete = function(move) {
     var index = this.workout.indexOf(move)
     this.workout.splice(index, 1);
+      console.log("Work!")
   }
 
   // Utilize the Date for titles?
@@ -200,9 +195,12 @@ angular.module('activ8')
   }
 
   this.disable = function(){
-    if($('form').hasClass('ng-pristine')){
-      return true;
-    }
+      if(this.workout.length == 0){
+          return true;
+      }
+//    if($('form').hasClass('ng-pristine')){
+//      return true;
+//    }
     else {
       return false;
     }

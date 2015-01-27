@@ -1,4 +1,16 @@
 <!-- PR Screen -->
-<ion-view title="Personal Records">
-     
+<ion-view title="PR's">
+     <ion-content padding="true" class="has-header">
+         <div class="container-fluid">
+             <section id="personalBests">
+                 <ul class="pr-list">
+                     <li class="row" ng-repeat="(name, best) in app.user.pr">
+                         <h4 class="pr-name">{{name}}: </h4>
+                         <div id="contenteditable" contenteditable name="prs" ng-model="best.weight" strip-br="true" class="prWeight">&nbsp;{{best.weight}}</br>
+                         </div>
+                     </li>
+                 </ul>
+            </section>
+        </div>
+     </ion-content>
 </ion-view>

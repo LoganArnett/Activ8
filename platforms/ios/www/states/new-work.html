@@ -1,9 +1,8 @@
 <!-- New Workout Screen -->
 <ion-view title="New Workout" ng-controller="NewWorkCtrl as work">
     <ion-content padding="true" class="has-header">
-        <section class="main">
+        <section class="main list">
             <form class="new-move" ng-submit="work.addWork(work.workout)" name="new">
-                <label><h3>Today's Workout</h3></label><br>
                 <div class="new-moves list" ng-repeat="move in work.workout" >
                     <label class="item item-input">
                         <input class="form-control" ng-model="move.name" type="text" list="moving" placeholder="Select Movement" autocomplete="on" required>
@@ -14,17 +13,22 @@
                     <label class="item item-input">
                         <input type="text" class="form-control" ng-model="move.rds"  placeholder="Rounds" required>
                     </label>
-                    <div class="input-group">
+                    <label class="item item-input">
                         <input type="text" class="form-control" ng-model="move.weight" placeholder="Weight">
-                        <span class="input-group-btn">
-                        <button id="delete-move" class="button button-assertive ion ion-trash-a" type="button" ng-click="work.delete(move)"></button>
-                        </span>
+                    </label>
+                    <div class="input-group">
+                            <span class="input-group-btn">
+                            <button id="delete-move" class="button button-assertive ion ion-trash-a" ng-click="work.delete(move)"></button>
+                            </span>
                     </div>
                         <input type="text" ng-hide="true" ng-model="move.moveNumber"><br>
                 </div>
-                <div>
-                    <input type="button" class="add-move-btn" value="Add Movement" ng-click="work.addMove()"><br>
-                    <input type="submit" class="save-btn" value="Save Workout" ng-hide="work.disable()">
+                <div class="add-save row">
+                    <button class="add-move-btn button button-balanced col" ng-click="work.addMove()">                         Add Movement
+                    </button>
+                    <button type="submit" class="save-btn button button-positive col" ng-hide="work.disable()">
+                    Save Workout    
+                    </button>
                 </div>
             </form>
             <datalist id="moving">
