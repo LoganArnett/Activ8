@@ -1,7 +1,7 @@
 <!-- New Workout Screen -->
 <ion-view title="New Workout" ng-controller="NewWorkCtrl as work">
     <ion-content padding="true" class="has-header">
-        <section class="main">
+        <section class="main list">
             <form class="new-move" ng-submit="work.addWork(work.workout)" name="new">
                 <div class="new-moves list" ng-repeat="move in work.workout" >
                     <label class="item item-input">
@@ -23,9 +23,12 @@
                     </div>
                         <input type="text" ng-hide="true" ng-model="move.moveNumber"><br>
                 </div>
-                <div class="add-save">
-                    <input type="button" class="add-move-btn" value="Add Movement" ng-click="work.addMove()"><br>
-                    <input type="submit" class="save-btn" value="Save Workout" ng-hide="work.disable()">
+                <div class="add-save row">
+                    <button class="add-move-btn button button-balanced col" ng-click="work.addMove()">                         Add Movement
+                    </button>
+                    <button type="submit" class="save-btn button button-positive col" ng-hide="work.disable()">
+                    Save Workout    
+                    </button>
                 </div>
             </form>
             <datalist id="moving">

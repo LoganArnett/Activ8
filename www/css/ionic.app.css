@@ -7022,6 +7022,9 @@ a.button {
   background-color: rgba(0, 0, 0, 0);
   z-index: -9; }
 
+div.scroll.padding {
+  padding: 0; }
+
 .bar.bar-header, .bar.bar-dark {
   background-color: rgba(44, 44, 44, 0.8); }
   .bar.bar-header .title, .bar.bar-dark .title {
@@ -7101,11 +7104,26 @@ button#delete-move {
   color: #fff;
   text-align: center; }
 
-.add-save {
-  text-align: center; }
+.new-move {
+  padding-bottom: 20%; }
+
+.add-save.row {
+  text-align: center;
+  padding: 0; }
 
 .user-history {
   background-color: rgba(0, 0, 0, 0.3); }
+  .user-history .my-history {
+    margin-bottom: 20%; }
   .user-history .history-list h4, .user-history .history-list h5, .user-history .history-list .move-listings {
     color: #fff;
+    text-align: center; }
+
+.pr-list {
+  margin: 15% auto;
+  width: 65%;
+  color: red; }
+  .pr-list .pr-name {
+    color: red;
+    margin: 0;
     text-align: center; }

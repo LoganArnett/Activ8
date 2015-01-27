@@ -39,6 +39,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     z-index: -9;
 }
 
+div.scroll.padding {
+    padding: 0;
+}
+
 .bar.bar-header, .bar.bar-dark {
     
     background-color: rgba(44,44,44,0.8);
@@ -136,13 +140,22 @@ button#delete-move {
     text-align: center;
 }
 
-.add-save {
+.new-move {
+    padding-bottom: 20%;
+}
+
+.add-save.row {
     text-align: center;
+    padding: 0;
 }
 
 //History.html 
 .user-history {
      background-color: rgba(0,0,0,0.3);
+    
+    .my-history {
+        margin-bottom: 20%;
+    }
     
     .history-list { 
         
@@ -153,6 +166,18 @@ button#delete-move {
     }
 }
 
+//PR.html 
+.pr-list {
+    margin: 15% auto;
+    width: 65%;
+    color: red;
+    
+    .pr-name {
+        color: red;
+        margin: 0;
+        text-align: center;
+    }
+}
 
 
 
