@@ -162,7 +162,7 @@ angular.module('activ8')
       return $location.path('/login')
     }
     else {
-      return $location.path('/')
+      return $location.path('/main')
     }
   });
 

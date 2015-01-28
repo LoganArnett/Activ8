@@ -157,8 +157,9 @@ angular.module('activ8')
 
   Auth.onAuth(function(user){
     self.user = user;
+              console.log(user)
     if (user === null ){
-      return $location.path('/main')
+      return $location.path('/login')
     }
     else {
       return $location.path('/')
@@ -168,7 +169,7 @@ angular.module('activ8')
   this.loggedIn = Auth.loggedIn;
 
   this.outDoor = function(){
-    if($location.path() === "/" || $location.path() === "/login"){
+    if($location.path() === "/login"){
       return false;
     }
     else {
