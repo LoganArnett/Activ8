@@ -30,8 +30,7 @@
         <ion-nav-view class="main-body"></ion-nav-view>
         <ion-nav-bar ng-show="app.outDoor()">
             <div class="buttons light-buttons">
-                <a id="home-btn" class="button button-clear ion ion-home" href="#/main"></a>
-                <button id="out-btn" class="button button-clear ion ion-log-out " ng-click="app.logout()"></button>
+                <button id="out-btn" class="button button-clear ion ion-log-out " ng-click="app.logout()" ng-show="app.outDoor()"></button>
             </div>
             <ion-tabs class="tabs-dark tabs-icon-top tabs-striped">
                 <ion-tab title="Home" icon="ion-home" nav-direction="swap" href="/main">
