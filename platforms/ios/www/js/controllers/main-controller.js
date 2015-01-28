@@ -37,7 +37,7 @@ angular.module('activ8')
     * correct provider code.
     */
     login: function($location){
-      return auth.$authWithOAuthRedirect('facebook')
+      return auth.$authWithOAuthPopup('facebook')
     },
 
     loggedIn: function(){
@@ -147,9 +147,10 @@ angular.module('activ8')
 * @method {undefined} logout -- trigger the logout workflow
 */
 .controller('MainCtrl', function(Auth, $location){
-  console.log("Hello")
+            
   var self = this;
-
+  this.ref = window.open('http://apache.org', '_blank', 'location=yes');
+    
   this.login = Auth.login;
 
   this.logout = Auth.logout;
@@ -157,7 +158,7 @@ angular.module('activ8')
   Auth.onAuth(function(user){
     self.user = user;
     if (user === null ){
-      return $location.path('/login')
+      return $location.path('/main')
     }
     else {
       return $location.path('/')
