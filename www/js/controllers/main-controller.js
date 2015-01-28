@@ -157,11 +157,12 @@ angular.module('activ8')
 
   Auth.onAuth(function(user){
     self.user = user;
+              console.log(user)
     if (user === null ){
       return $location.path('/login')
     }
     else {
-      return $location.path('/main')
+      return $location.path('/')
     }
   });
 
