@@ -149,7 +149,7 @@ angular.module('activ8')
 .controller('MainCtrl', function(Auth, $location){
             
   var self = this;
-  this.ref = window.open('http://apache.org', '_blank', 'location=yes');
+  
     
   this.login = Auth.login;
 
@@ -162,7 +162,7 @@ angular.module('activ8')
       return $location.path('/login')
     }
     else {
-      return $location.path('/')
+      return $location.path('/main')
     }
   });
 
