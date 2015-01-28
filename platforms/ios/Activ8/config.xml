@@ -28,9 +28,6 @@
     <feature name="Cookies">
         <param name="ios-package" value="CDVCookies" />
     </feature>
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
     <name>creatorTest</name>
     <description>
         An Ionic Framework and Cordova project.
