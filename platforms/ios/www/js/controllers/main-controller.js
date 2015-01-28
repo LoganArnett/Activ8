@@ -151,9 +151,9 @@ angular.module('activ8')
   var self = this;
   
     
-  this.login = function(
-  return console.log("Hello?!")
-  );
+  this.login = function(){
+   return console.log("Hello?!")   
+  };
 //      Auth.login;
 
   this.logout = Auth.logout;
