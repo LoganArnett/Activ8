@@ -15,22 +15,13 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
             },
             "framework": {
                 "parents": {
-                    "CoreGraphics.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ]
+                    "CoreGraphics.framework": []
                 }
             }
         }
@@ -40,9 +31,6 @@
             "PACKAGE_NAME": "com.ionicframework.creatortest879506"
         },
         "org.apache.cordova.device": {
-            "PACKAGE_NAME": "com.ionicframework.creatortest879506"
-        },
-        "org.apache.cordova.inappbrowser": {
             "PACKAGE_NAME": "com.ionicframework.creatortest879506"
         }
     },

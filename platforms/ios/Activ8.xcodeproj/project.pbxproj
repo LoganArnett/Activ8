@@ -42,7 +42,6 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		871B00DF2E4447E99568E16D /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E1FC7E9E8B4EE8AD35F6BE /* CDVDevice.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		6F3C6CB69DF8411F83107E68 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A74D60CC2496ABDC67AE0 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,8 +110,6 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F57BE8C290654E858B2C1428 /* IonicKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = com.ionic.keyboard/IonicKeyboard.h; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = creatorTest/config.xml; sourceTree = "<group>"; };
-		F07A74D60CC2496ABDC67AE0 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		EF9C911430294D9BB2419F9C /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,8 +213,6 @@
 				C89AA8B7BD324BA484E32BDC /* UIWebViewExtension.h */,
 				13E1FC7E9E8B4EE8AD35F6BE /* CDVDevice.m */,
 				B41F727AB6BD4AEC9345E393 /* CDVDevice.h */,
-				F07A74D60CC2496ABDC67AE0 /* CDVInAppBrowser.m */,
-				EF9C911430294D9BB2419F9C /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = creatorTest/Plugins;
@@ -410,7 +405,6 @@
 				470E273DB7D34C088E05DCAF /* IonicKeyboard.m in Sources */,
 				4BCD3A7146294DBB9A0A4D92 /* UIWebViewExtension.m in Sources */,
 				871B00DF2E4447E99568E16D /* CDVDevice.m in Sources */,
-				6F3C6CB69DF8411F83107E68 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
