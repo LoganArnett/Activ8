@@ -43,6 +43,7 @@
 		871B00DF2E4447E99568E16D /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E1FC7E9E8B4EE8AD35F6BE /* CDVDevice.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		3A7A6856B41D4ECCA167C9D3 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D17212450A45D3BEEC6AAB /* CDVInAppBrowser.m */; };
+		C143E6176AC549438D9A0A26 /* CDVCookies.m in Sources */ = {isa = PBXBuildFile; fileRef = 397E2A49B1214F40B7ACAF5D /* CDVCookies.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,8 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = creatorTest/config.xml; sourceTree = "<group>"; };
 		38D17212450A45D3BEEC6AAB /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		E988EB059BAF40C4941448BA /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		397E2A49B1214F40B7ACAF5D /* CDVCookies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVCookies.m"; path = "com.bez4pieci.cookies/CDVCookies.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		B6E3D996608243B4BB384BD0 /* CDVCookies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVCookies.h"; path = "com.bez4pieci.cookies/CDVCookies.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +223,8 @@
 				B41F727AB6BD4AEC9345E393 /* CDVDevice.h */,
 				38D17212450A45D3BEEC6AAB /* CDVInAppBrowser.m */,
 				E988EB059BAF40C4941448BA /* CDVInAppBrowser.h */,
+				397E2A49B1214F40B7ACAF5D /* CDVCookies.m */,
+				B6E3D996608243B4BB384BD0 /* CDVCookies.h */,
 			);
 			name = Plugins;
 			path = creatorTest/Plugins;
@@ -413,6 +418,7 @@
 				4BCD3A7146294DBB9A0A4D92 /* UIWebViewExtension.m in Sources */,
 				871B00DF2E4447E99568E16D /* CDVDevice.m in Sources */,
 				3A7A6856B41D4ECCA167C9D3 /* CDVInAppBrowser.m in Sources */,
+				C143E6176AC549438D9A0A26 /* CDVCookies.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
