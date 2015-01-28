@@ -161,14 +161,14 @@ angular.module('activ8')
       return $location.path('/login')
     }
     else {
-      return $location.path('/')
+      return $location.path('/main')
     }
   });
 
   this.loggedIn = Auth.loggedIn;
 
   this.outDoor = function(){
-    if($location.path() === "/" || $location.path() === "/login"){
+    if($location.path() === "/login"){
       return false;
     }
     else {
