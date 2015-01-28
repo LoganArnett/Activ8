@@ -15,10 +15,6 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Cookies\"><param name=\"ios-package\" value=\"CDVCookies\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
@@ -35,9 +31,6 @@
             "PACKAGE_NAME": "com.ionicframework.creatortest879506"
         },
         "org.apache.cordova.device": {
-            "PACKAGE_NAME": "com.ionicframework.creatortest879506"
-        },
-        "com.bez4pieci.cookies": {
             "PACKAGE_NAME": "com.ionicframework.creatortest879506"
         }
     },
