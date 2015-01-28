@@ -7038,6 +7038,9 @@ div.scroll.padding {
   background-position: center;
   z-index: -2; }
 
+.login-button {
+  min-height: 250px; }
+
 #home-btn {
   font-size: 20pt;
   text-align: center;
