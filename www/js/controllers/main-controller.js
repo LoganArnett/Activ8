@@ -147,11 +147,10 @@ angular.module('activ8')
 * @method {undefined} logout -- trigger the logout workflow
 */
 .controller('MainCtrl', function(Auth, $location){
-  
+            
   var self = this;
 
-  this.login = console.log("Hello");
-//      Auth.login;
+  this.login = Auth.login;
 
   this.logout = Auth.logout;
 
